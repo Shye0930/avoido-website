@@ -1,0 +1,12 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1d1d1f; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+button, summary, label { -webkit-tap-highlight-color: transparent; }
+img { max-width: 100%; height: auto; }
+h1, h2, h3, p, figure { margin: 0; }
+:focus-visible { outline: 3px solid #0059b3; outline-offset: 5px; }
+section[id] { scroll-margin-top: 88px; }
+::selection { background: #d7eaff; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }

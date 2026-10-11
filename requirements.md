@@ -1,0 +1,31 @@
+# Avoido website requirements
+
+Updated: 2026-10-11. Status: local implementation complete; browser evidence recorded; remaining acceptance checks and deployment pending.
+
+These requirements apply only to the website. Preserve the `WEB-*` IDs when revising them. The [selected mockup and approved choices](specs.md) establish the visual direction; [design.md](design.md) describes the implementation, and [tasks.md](tasks.md) tracks delivery.
+
+## Requirements and acceptance criteria
+
+| ID | Requirement | Acceptance criteria |
+|---|---|---|
+| WEB-01 | Introduce Avoido and support project exploration. | The page identifies Avoido as a native LiDAR obstacle-awareness app. The first screen contains an In development badge, the agreed headline and description, and Explore Avoido and How it works links. |
+| WEB-02 | Match the selected first mockup. | Desktop and mobile screenshots preserve the centered oversized headline, large landscape device illustration, light palette, feature arrangement, and pale explanatory section. Use live HTML text and controls. The more spacious revision is not the layout reference. |
+| WEB-03 | Provide working section navigation. | Experience, How it works, and Development links reach their respective sections. Explore Avoido and mobile Explore reach Experience. Sticky navigation does not cover destination headings. The mobile menu opens, closes, exposes its state, and supports keyboard operation. |
+| WEB-04 | Show app experience illustrations. | A dominant landscape device illustration follows the hero. The feature section explains nearby surfaces, close-range speech, and haptics on supported devices. Each app illustration is identified as illustrative and has useful alternative text. |
+| WEB-05 | Allow switching between map views. | A Top down / Front selector appears in the explanatory section. Top down is initially selected. Pointer and keyboard selection update the map illustration, caption, and selected state without a page reload or layout jump. The control switches illustrative content only. |
+| WEB-06 | Explain the processing sequence. | From depth to awareness includes introductory copy, a map close-up, and Scan, Map, and Respond steps. Copy distinguishes measured surfaces from uncertain space and never describes green map regions as a guaranteed safe route. |
+| WEB-07 | State app status and compatibility accurately. | The development section says physical validation is ongoing, lists a LiDAR-capable iPhone or iPad with iOS or iPadOS 26 or later, and explains that core sensing works offline. Haptic capability is qualified by device support. Claims follow the native app specs at implementation time. |
+| WEB-08 | Adapt to desktop, tablet, and mobile. | At proposed test widths of 375, 768, and 1440 CSS pixels, content fits without horizontal page scrolling or overlapping controls. Desktop features use columns; mobile features stack. Mobile shows brand, Explore, and menu controls. Content remains usable at 320 CSS pixels and at 200% browser zoom. |
+| WEB-09 | Support accessible reading and operation. | Use semantic landmarks, one h1, ordered heading levels, a skip link, visible keyboard focus, accessible control names and states, and meaningful image descriptions. Interactive targets are at least 44 by 44 CSS pixels. Normal text contrast is at least 4.5:1; large text and essential control boundaries are at least 3:1. Do not convey map meaning through color alone. |
+| WEB-10 | Use restrained, accessible motion. | Buttons respond immediately to pressing. Images crossfade and sections reveal once without blocking input. Reduced-motion mode removes positional reveals and animated crossfades. Reduced-transparency and increased-contrast preferences retain readable navigation. No scroll hijacking, autoplay audio, or large moving backgrounds. |
+| WEB-11 | Use the requested framework in an isolated project. | Website source and configuration live under website/. Use Next.js 16.4.x, compatible React, TypeScript, App Router, npm, and CSS Modules. Record resolved dependencies in a lockfile. Production build and TypeScript checks pass. Do not modify the native app build. |
+| WEB-12 | Keep the core content prerendered and resilient. | The page's main content is available in its initial HTML. Images reserve their layout dimensions. Without JavaScript, visitors can read the page and default Top down explanation and use section links. Content remains visible if reveal enhancement fails. No external data API is needed. |
+| WEB-13 | Provide page and sharing metadata. | Set an Avoido-specific title and description, reuse the existing app icon as favicon, and provide a social preview. Add the production URL and canonical metadata only when a real deployment address is known. |
+| WEB-14 | Prepare for later Vercel hosting. | Document importing or deploying the website with website as the Vercel Root Directory, the Next.js framework setting, npm installation, and production build command. No deployment occurs during documentation or local implementation. A later publication task separately records the verified URL. |
+| WEB-15 | Keep the website scope and evidence clear. | No signup, accounts, analytics, pricing, download links, browser sensing, backend, or public API. No native app edits or device installations. No invented testimonials or performance figures. Illustrations and website checks are never reported as physical app validation. |
+
+## Verification status
+
+Local implementation now covers WEB-01 through WEB-15. Production build, type checks, prerendered-content checks, and in-app browser evidence are recorded in [verification.md](verification.md). Full browser compatibility, native 200% zoom, and runtime accessibility-preference checks remain open in [tasks.md](tasks.md). Implementation coverage does not establish every acceptance criterion as passed.
+
+The numeric viewport sizes and 44 CSS pixel target minimum are proposed verification defaults. The framework, selected design, switchable showcase, and subtle motion are user-selected requirements. [Native app requirements](../docs/requirements.md) govern the advertised app capabilities rather than this website's visual illustrations.

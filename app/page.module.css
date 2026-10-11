@@ -1,0 +1,139 @@
+.header { position: sticky; top: 0; z-index: 10; background: rgb(255 255 255 / 92%); backdrop-filter: blur(18px); border-bottom: 1px solid #e8e8eb; }
+.nav { max-width: 1200px; min-height: 64px; margin: auto; padding: 0 48px; display: flex; align-items: center; gap: 28px; }
+.brand { display: inline-flex; align-items: center; gap: 11px; min-height: 44px; font-size: 22px; font-weight: 650; letter-spacing: -0.04em; }
+.brand img { border-radius: 6px; }
+.desktopLinks { margin-left: auto; display: flex; gap: 32px; font-size: 14px; }
+.desktopLinks a, .footer > a:last-child { display: flex; align-items: center; min-height: 44px; }
+.desktopLinks a:hover, .footer > a:last-child:hover { color: #0066cc; }
+.mobileExplore, .mobileMenu { display: none; }
+.hero { text-align: center; padding: 34px 24px 0; }
+.badge { display: inline-block; padding: 6px 16px; background: #e1efff; color: #0059b3; font-size: 13px; border-radius: 30px; }
+.hero h1 { font-size: clamp(2.5rem, 5.9vw, 5.5rem); font-weight: 700; line-height: 1.02; letter-spacing: -0.055em; margin: 13px auto 18px; max-width: 920px; }
+.hero > p { color: #56565c; font-size: 18px; line-height: 1.5; }
+.heroActions { display: flex; justify-content: center; align-items: center; gap: 22px; margin: 18px 0 0; }
+.primary { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 27px; background: #0066cc; color: #fff; border-radius: 28px; font-size: 15px; font-weight: 600; }
+.primary:hover { background: #0059b3; }
+.primary:active, .secondary:active { transform: scale(0.98); }
+.secondary { color: #0066cc; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; font-size: 15px; font-weight: 500; }
+.experience { padding: 0 48px 30px; max-width: 1200px; margin: auto; }
+.device { max-width: 860px; margin: 0 auto; text-align: center; }
+.device img { display: block; width: 100%; }
+.device figcaption { font-size: 12px; color: #65656b; margin-top: -9px; }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 29px; }
+.feature { display: flex; gap: 20px; padding: 0 28px; border-left: 1px solid #dedee2; }
+.feature:first-child { border-left: 0; padding-left: 0; }
+.feature:last-child { padding-right: 0; }
+.feature > svg { width: 34px; height: 34px; color: #0066cc; flex-shrink: 0; }
+.feature h2 { font-size: 17px; font-weight: 650; letter-spacing: -0.025em; margin: 0 0 6px; }
+.feature p { font-size: 14px; color: #56565c; line-height: 1.45; max-width: 245px; }
+.how { background: #f7f7f5; padding: 52px 48px 26px; }
+.howGrid { display: grid; grid-template-columns: 1.15fr 0.95fr 0.75fr; align-items: start; gap: 45px; max-width: 1104px; margin: auto; }
+.howIntro h2, .development h2 { font-size: clamp(1.8rem, 3vw, 2.75rem); line-height: 1.08; letter-spacing: -0.045em; font-weight: 650; }
+.howIntro > p { color: #56565c; font-size: 17px; line-height: 1.5; margin-top: 17px; max-width: 345px; }
+.textLink { color: #0066cc; font-size: 14px; display: inline-flex; gap: 8px; align-items: center; min-height: 44px; margin-top: 8px; }
+.showcase { min-width: 0; }
+.mapImages { position: relative; aspect-ratio: 4 / 3; border: 1px solid #343638; border-radius: 15px; overflow: hidden; background: #141819; }
+.mapImages img { width: 100%; height: 100%; display: block; position: absolute; inset: 0; }
+.mapTop { opacity: 1; visibility: visible; }
+.mapFront { opacity: 0; visibility: hidden; }
+.frontCaption { display: none; }
+.showcase:has(input[value="front"]:checked) .mapTop { opacity: 0; visibility: hidden; }
+.showcase:has(input[value="front"]:checked) .mapFront { opacity: 1; visibility: visible; }
+.showcase:has(input[value="front"]:checked) .topCaption { display: none; }
+.showcase:has(input[value="front"]:checked) .frontCaption { display: block; }
+.segmented { display: flex; border: 1px solid #85858c; background: #e8e8e9; border-radius: 12px; padding: 3px; margin: 12px 0 0; min-width: 0; }
+.segmented label { position: relative; width: 50%; cursor: pointer; }
+.segmented input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.segmented span { display: flex; justify-content: center; align-items: center; min-height: 44px; font-size: 13px; font-weight: 600; border-radius: 8px; }
+.segmented input:checked + span { background: #fff; box-shadow: 0 1px 4px #0002; }
+.segmented input:focus-visible + span { outline: 3px solid #0059b3; outline-offset: 2px; }
+.mapCaption { margin: 10px 0 0; color: #56565c; font-size: 12px; line-height: 1.45; min-height: 66px; }
+.mapCaption > span { display: block; font-size: 11px; margin-bottom: 3px; color: #65656b; }
+.steps { counter-reset: step; padding: 0; margin: 0; list-style: none; }
+.steps li { counter-increment: step; position: relative; padding-left: 46px; margin-bottom: 24px; }
+.steps li::before { content: counter(step) / ""; position: absolute; left: 0; top: 0; background: #e1efff; color: #0059b3; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; font-size: 13px; font-weight: 600; }
+.steps h3 { font-size: 16px; letter-spacing: -0.02em; margin-bottom: 5px; font-weight: 650; }
+.steps p { color: #56565c; font-size: 13px; line-height: 1.5; }
+.legend { max-width: 1104px; margin: 20px auto 0; border-top: 1px solid #dedee2; padding-top: 18px; font-size: 12px; color: #56565c; line-height: 1.8; }
+.legend p:first-child { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.legend p:last-child { margin-top: 7px; }
+.redKey, .greenKey, .yellowKey { display: inline-block; width: 10px; height: 10px; margin-left: 12px; border: 1px solid #56565c; }
+.redKey { background: #d73b32; margin-left: 0; }
+.greenKey { background: #328945; border-radius: 50%; }
+.yellowKey { background: repeating-linear-gradient(135deg, #d9b22e 0 2px, #f2df96 2px 4px); }
+.development { max-width: 1200px; padding: 46px 48px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+.eyebrow { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.13em; color: #65656b; margin-bottom: 10px; }
+.development h2 { font-size: 28px; }
+.development p { margin-top: 12px; font-size: 14px; color: #56565c; line-height: 1.6; }
+.development ul { list-style: none; padding: 0; margin: 0; font-size: 13px; line-height: 2.2; color: #56565c; }
+.development li::before { content: "✓"; color: #0066cc; padding-right: 9px; }
+.footer { max-width: 1104px; margin: auto; border-top: 1px solid #e8e8eb; padding: 12px 0; display: flex; align-items: center; justify-content: space-between; }
+.footer .brand { font-size: 17px; }
+.footer > a:last-child { color: #56565c; gap: 8px; font-size: 12px; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.skipLink { position: fixed; top: 8px; left: 8px; z-index: 20; background: #fff; padding: 14px; transform: translateY(-180%); }
+.skipLink:focus { transform: translateY(0); }
+@media (prefers-reduced-motion: no-preference) {
+  .primary, .secondary { transition: transform 100ms ease, background 100ms ease; }
+  .mapImages img { transition: opacity 180ms ease, visibility 180ms; }
+}
+@media (prefers-reduced-transparency: reduce) { .header { background: #fff; backdrop-filter: none; } }
+@media (prefers-contrast: more) {
+  .header { background: #fff; border-color: #56565c; }
+  .feature, .legend, .footer { border-color: #56565c; }
+  .segmented { border-color: #1d1d1f; }
+}
+@media (max-width: 1000px) and (min-width: 768px) {
+  .nav, .experience, .development { padding-left: 32px; padding-right: 32px; }
+  .how { padding-left: 32px; padding-right: 32px; }
+  .howGrid { gap: 24px; grid-template-columns: 1fr 1fr; }
+  .steps { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .feature { gap: 12px; padding: 0 18px; }
+  .footer { margin: 0 32px; }
+}
+@media (max-width: 767px) {
+  .nav { min-height: 64px; padding: 0 20px; gap: 10px; }
+  .brand { font-size: 21px; }
+  .desktopLinks { display: none; }
+  .mobileExplore { display: flex; align-items: center; justify-content: center; min-width: 60px; min-height: 44px; margin-left: auto; font-size: 14px; color: #0066cc; }
+  .mobileMenu { display: block; }
+  .mobileMenu summary { list-style: none; width: 44px; height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; cursor: pointer; }
+  .mobileMenu summary::-webkit-details-marker { display: none; }
+  .mobileMenu summary span { width: 19px; height: 1.5px; background: #1d1d1f; }
+  .menuLinks { position: absolute; top: 63px; left: 0; right: 0; background: #fff; box-shadow: 0 8px 15px #0001; padding: 10px 20px; border-bottom: 1px solid #dedee2; }
+  .menuLinks a { display: flex; align-items: center; min-height: 48px; font-size: 15px; }
+  .hero { padding: 26px 20px 0; }
+  .hero h1 { font-size: clamp(2.25rem, 9.2vw, 3.5rem); margin: 20px auto 17px; max-width: 570px; letter-spacing: -0.045em; line-height: 1.08; }
+  .desktopBreak { display: none; }
+  .hero > p { font-size: 16px; max-width: 390px; margin: auto; }
+  .heroActions { flex-direction: column; gap: 3px; margin-top: 20px; }
+  .primary { min-width: 215px; }
+  .secondary { min-height: 48px; }
+  .experience { padding: 0 12px 28px; }
+  .device { max-width: 600px; margin: 8px auto 0; }
+  .device figcaption { margin-top: -3px; font-size: 11px; }
+  .features { display: block; padding: 0 12px; margin: 26px auto 0; max-width: 440px; }
+  .feature, .feature:first-child, .feature:last-child { padding: 18px 0; border-left: 0; border-bottom: 1px solid #e8e8eb; gap: 22px; }
+  .feature:first-child { padding-top: 0; }
+  .feature:last-child { border-bottom: 0; padding-bottom: 0; }
+  .feature h2 { font-size: 16px; }
+  .feature p { font-size: 14px; }
+  .how { padding: 34px 24px 24px; }
+  .howGrid { display: flex; flex-direction: column; gap: 26px; max-width: 440px; }
+  .howIntro h2 { font-size: 34px; }
+  .howIntro p { font-size: 16px; }
+  .showcase { width: 100%; }
+  .mapImages { max-height: 300px; }
+  .mapCaption { min-height: 45px; }
+  .steps { width: 100%; }
+  .steps li { margin-bottom: 22px; }
+  .steps li:last-child { margin-bottom: 0; }
+  .steps p { font-size: 14px; max-width: 300px; }
+  .legend { max-width: 440px; margin-top: 26px; }
+  .legend p:first-child { display: block; }
+  .redKey, .greenKey, .yellowKey { margin: 0 5px 0 0; }
+  .greenKey, .yellowKey { margin-left: 5px; }
+  .development { display: block; padding: 34px 24px; max-width: 488px; }
+  .development ul { margin-top: 22px; }
+  .footer { margin: 0 24px; }
+}

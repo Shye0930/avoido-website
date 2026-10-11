@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs>
+<pattern id="unknown" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10 10 0" stroke="#f0ce48" stroke-opacity=".45"/></pattern>
+<pattern id="ground" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.8" fill="#5ddd82"/></pattern>
+<pattern id="obstacle" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 0 10 10M10 0 0 10" stroke="#ffaca2" stroke-opacity=".4"/></pattern>
+</defs>
+<rect width="400" height="300" fill="#4c4624"/><rect width="400" height="300" fill="url(#unknown)"/>
+<path d="M0 235 121 181 216 201 400 160V300H0Z" fill="#216e3b"/><path d="M0 235 121 181 216 201 400 160V300H0Z" fill="url(#ground)"/>
+<g fill="#ce3d32" stroke="#ff8c80" stroke-width="2"><path d="M83 99h62l15 84 26 10v24H86l-14-23h21Z M91 216h11v59H91Zm68 0h11v56h-11Z"/><path d="M218 152h182v23H218Zm17 23h13v104h-13Zm131 0h14v94h-14Z"/></g>
+<g fill="url(#obstacle)"><path d="M83 99h62l15 84 26 10v24H86l-14-23h21Z"/><path d="M218 152h182v23H218Z"/></g>
+<path d="M180 24h40m-20-7v14" stroke="white" stroke-opacity=".6" stroke-width="1.5"/><text x="200" y="49" text-anchor="middle" fill="#fff" font-size="11" font-family="sans-serif">FRONT VIEW</text>
+</svg>

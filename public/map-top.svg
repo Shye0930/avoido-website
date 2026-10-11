@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs>
+<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity=".09"/></pattern>
+<pattern id="unknown" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10 10 0" stroke="#f0ce48" stroke-opacity=".5"/></pattern>
+<pattern id="visible" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.8" fill="#38c06a"/></pattern>
+<pattern id="obstacle" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 0 8 8M8 0 0 8" stroke="#ff8c80" stroke-opacity=".4"/></pattern>
+</defs>
+<rect width="400" height="300" fill="#121819"/><rect width="400" height="300" fill="url(#grid)"/>
+<path d="M0 0H400V300H330L265 107 192 56 0 245Z" fill="#524b20"/><path d="M0 0H400V300H330L265 107 192 56 0 245Z" fill="url(#unknown)"/>
+<path d="M192 275 36 116 192 55 359 119Z" fill="#16462a"/><path d="M192 275 36 116 192 55 359 119Z" fill="url(#visible)"/>
+<g fill="#d23c32" stroke="#ff7769" stroke-width="2"><path d="m89 130 51-24 26 53-51 24Z"/><rect x="243" y="83" width="84" height="94" rx="2"/></g>
+<g fill="url(#obstacle)"><path d="m89 130 51-24 26 53-51 24Z"/><rect x="243" y="83" width="84" height="94"/></g>
+<path d="m192 242-14 32 14-8 14 8Z" fill="white"/><path d="m192 242-100-140m100 140 108-140" stroke="white" stroke-opacity=".25" stroke-dasharray="4 5"/>
+<path d="M25 271h57m-57-4v8m57-8v8" stroke="white" stroke-width="2"/><text x="53" y="260" fill="white" font-family="sans-serif" font-size="12" text-anchor="middle">1 m</text>
+</svg>

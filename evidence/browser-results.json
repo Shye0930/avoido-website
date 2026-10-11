@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-11",
+  "browser": "Codex in-app browser",
+  "viewports": [
+    {
+      "h1": 1,
+      "scrollWidth": 305,
+      "targets": [
+        {
+          "height": 47,
+          "width": 137.7890625
+        },
+        {
+          "height": 44,
+          "width": 102.3515625
+        },
+        {
+          "height": 44,
+          "width": 60
+        },
+        {
+          "height": 44,
+          "width": 44
+        },
+        {
+          "height": 46,
+          "width": 215
+        },
+        {
+          "height": 48,
+          "width": 111.4296875
+        },
+        {
+          "height": 44,
+          "width": 144.7734375
+        },
+        {
+          "height": 44,
+          "width": 124.5
+        },
+        {
+          "height": 44,
+          "width": 124.5
+        },
+        {
+          "height": 44,
+          "width": 85.5859375
+        },
+        {
+          "height": 44,
+          "width": 81.9140625
+        }
+      ],
+      "width": 320
+    },
+    {
+      "h1": 1,
+      "scrollWidth": 360,
+      "targets": [
+        {
+          "height": 47,
+          "width": 137.7890625
+        },
+        {
+          "height": 44,
+          "width": 102.3515625
+        },
+        {
+          "height": 44,
+          "width": 60
+        },
+        {
+          "height": 44,
+          "width": 44
+        },
+        {
+          "height": 46,
+          "width": 215
+        },
+        {
+          "height": 48,
+          "width": 111.4296875
+        },
+        {
+          "height": 44,
+          "width": 144.7734375
+        },
+        {
+          "height": 44,
+          "width": 152
+        },
+        {
+          "height": 44,
+          "width": 152
+        },
+        {
+          "height": 44,
+          "width": 85.5859375
+        },
+        {
+          "height": 44,
+          "width": 81.9140625
+        }
+      ],
+      "width": 375
+    },
+    {
+      "h1": 1,
+      "scrollWidth": 753,
+      "targets": [
+        {
+          "height": 47,
+          "width": 137.7890625
+        },
+        {
+          "height": 44,
+          "width": 105.1015625
+        },
+        {
+          "height": 44,
+          "width": 71.515625
+        },
+        {
+          "height": 44,
+          "width": 82.6796875
+        },
+        {
+          "height": 44,
+          "width": 85.484375
+        },
+        {
+          "height": 46,
+          "width": 160.0703125
+        },
+        {
+          "height": 46,
+          "width": 111.4296875
+        },
+        {
+          "height": 44,
+          "width": 144.7734375
+        },
+        {
+          "height": 44,
+          "width": 162.25
+        },
+        {
+          "height": 44,
+          "width": 162.25
+        },
+        {
+          "height": 44,
+          "width": 85.5859375
+        },
+        {
+          "height": 44,
+          "width": 81.9140625
+        }
+      ],
+      "width": 768
+    },
+    {
+      "h1": 1,
+      "scrollWidth": 1425,
+      "targets": [
+        {
+          "height": 47,
+          "width": 137.7890625
+        },
+        {
+          "height": 44,
+          "width": 105.1015625
+        },
+        {
+          "height": 44,
+          "width": 71.515625
+        },
+        {
+          "height": 44,
+          "width": 82.6796875
+        },
+        {
+          "height": 44,
+          "width": 85.484375
+        },
+        {
+          "height": 46,
+          "width": 160.0703125
+        },
+        {
+          "height": 46,
+          "width": 111.4296875
+        },
+        {
+          "height": 44,
+          "width": 144.7734375
+        },
+        {
+          "height": 44,
+          "width": 165
+        },
+        {
+          "height": 44,
+          "width": 165
+        },
+        {
+          "height": 44,
+          "width": 85.5859375
+        },
+        {
+          "height": 44,
+          "width": 81.9140625
+        }
+      ],
+      "width": 1440
+    }
+  ],
+  "map": {
+    "front": {
+      "caption": [
+        "A front view of supported surfaces and uncertain space."
+      ],
+      "checked": true,
+      "height": 393.5
+    },
+    "top": {
+      "caption": [
+        "A top-down view of measured surfaces and uncertain space."
+      ],
+      "checked": true,
+      "height": 393.5
+    }
+  },
+  "scriptFreeMapVerified": true,
+  "mobileEscapeFocusVerified": true
+}
